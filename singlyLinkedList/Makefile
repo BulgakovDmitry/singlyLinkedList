@@ -1,10 +1,10 @@
 Compiler = g++
 Target   = fdsefghjgfdgthyj
 
-SRC		 = src/
-B		 = build/
-H        = headers/
-M        = myLib/
+SRC		 = singlyLinkedList/src/
+B		 = singlyLinkedList/build/
+H        = singlyLinkedList/headers/
+M        = singlyLinkedList/myLib/
 
 Flags	 = -D _DEBUG -ggdb3 -std=c++17 -O0 -Wall -Wextra -Weffc++ -Waggressive-loop-optimizations -Wc++14-compat -Wmissing-declarations \
 		   -Wcast-align -Wcast-qual -Wchar-subscripts -Wconditionally-supported -Wctor-dtor-privacy -Wempty-body -Wfloat-equal          \

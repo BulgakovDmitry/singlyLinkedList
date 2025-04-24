@@ -1,7 +1,7 @@
 #ifndef LIST_STRUCT_HPP
 #define LIST_STRUCT_HPP
 
-typedef int dataType;
+typedef char* dataType;
 
 struct Node
 {

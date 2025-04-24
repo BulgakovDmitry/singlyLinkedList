@@ -2,7 +2,7 @@
 #include "../myLib/myLib.hpp"
 #include <stdlib.h>
 
-void addItemToBegin(SingleLinkedList *list, int item)
+void addItemToBegin(SingleLinkedList* list, dataType item)
 {
     ASSERT(list, "list = nullptr", stderr);
 
@@ -17,7 +17,7 @@ void addItemToBegin(SingleLinkedList *list, int item)
         list->tail = newNode;
 }
 
-void addItemToEnd(SingleLinkedList *list, int item)
+void addItemToEnd(SingleLinkedList *list, dataType item)
 {
     ASSERT(list, "list = nullptr", stderr);
 
@@ -33,7 +33,7 @@ void addItemToEnd(SingleLinkedList *list, int item)
     list->tail = newNode;
 }
 
-void addItemAfter(SingleLinkedList* list, Node* pos, int item)
+void addItemAfter(SingleLinkedList* list, Node* pos, dataType item)
 {
     ASSERT(list, "list = nullptr", stderr);
 
@@ -48,7 +48,7 @@ void addItemAfter(SingleLinkedList* list, Node* pos, int item)
     pos->next = newNode;
 }
 
-Node* findItem(SingleLinkedList list, int item)
+Node* findItem(SingleLinkedList list, dataType item)
 {
     Node* current = list.head;
 

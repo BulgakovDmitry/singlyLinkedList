@@ -3,12 +3,12 @@
 
 #include "listStruct.hpp"
 
-void addItemToBegin(SingleLinkedList *list, int item);
-void addItemToEnd  (SingleLinkedList *list, int item);
-void addItemAfter  (SingleLinkedList* list, Node* pos, int item);
+void addItemToBegin(SingleLinkedList *list, const dataType item);
+void addItemToEnd  (SingleLinkedList *list, const dataType item);
+void addItemAfter  (SingleLinkedList* list, Node* pos, const dataType item);
 
 void deleteItemAfter(SingleLinkedList* list, Node* node);
 
-Node* findItem(SingleLinkedList list, int item); 
+Node* findItem(SingleLinkedList list, const dataType item); 
 
 #endif

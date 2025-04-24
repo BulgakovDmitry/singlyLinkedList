@@ -11,7 +11,7 @@ void consoleDump(SingleLinkedList list)
 
     while (current)
     {
-        printf(GREEN "%d " GREEN, current->data);
+        printf(GREEN "%s " GREEN, current->data);
         current = current->next;
     }
 

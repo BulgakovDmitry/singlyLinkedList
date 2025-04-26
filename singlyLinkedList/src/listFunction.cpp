@@ -1,8 +1,8 @@
 #include "../headers/listFunction.hpp"
-#include "../myLib/myLib.hpp"
+#include "../../myLib/myLib.hpp"
 #include <stdlib.h>
 
-void addItemToBegin(SingleLinkedList* list, dataType item)
+void addItemToBegin(SingleLinkedList* list, const dataType item)
 {
     ASSERT(list, "list = nullptr", stderr);
 
@@ -17,9 +17,9 @@ void addItemToBegin(SingleLinkedList* list, dataType item)
         list->tail = newNode;
 }
 
-void addItemToEnd(SingleLinkedList *list, dataType item)
+void addItemToEnd(SingleLinkedList *list, const dataType item)
 {
-    ASSERT(list, "list = nullptr", stderr);
+    ASSERT(list, "list = nullptr", stderr );
 
     if (list->tail == nullptr)
         return addItemToBegin(list, item);
@@ -48,13 +48,13 @@ void addItemAfter(SingleLinkedList* list, Node* pos, dataType item)
     pos->next = newNode;
 }
 
-Node* findItem(SingleLinkedList list, dataType item)
+Node* findItem(SingleLinkedList list, const dataType item)
 {
     Node* current = list.head;
 
     while (current)
     {
-        if (current->data == item)
+        if (strcmp(current->data, item) == 0)
             return current;
         current = current->next;
     }

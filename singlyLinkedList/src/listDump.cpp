@@ -1,5 +1,5 @@
 #include "../headers/listDump.hpp"
-#include "../myLib/myLib.hpp"
+#include "../../myLib/myLib.hpp"
 
 #include <stdio.h>
 

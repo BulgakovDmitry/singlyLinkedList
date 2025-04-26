@@ -1,5 +1,5 @@
 #include "../headers/listStruct.hpp"
-#include "../myLib/myLib.hpp"
+#include "../../myLib/myLib.hpp"
 
 void listCtor(SingleLinkedList* list)
 {

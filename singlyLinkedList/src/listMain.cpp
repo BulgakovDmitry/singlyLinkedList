@@ -13,7 +13,7 @@ int main(void)
     //addItemAfter(&list, list.head, 10);
 
     Node* myNode = findItem(list, "world");
-    addItemAfter(&list, myNode, "salam");
+    addItemAfter(&list, myNode, "privet!");
 
     //deleteItemAfter(&list, list.head);
 
